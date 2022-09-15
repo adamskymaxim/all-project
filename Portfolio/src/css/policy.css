@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #212529;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-top: 24px;
+}
+
+.title-main {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+li {
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.descr {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+body {
+    padding: 20px;
+}
+
+span {
+    background-color: #fcf8e3;
+}
+
+a {
+    background-color: #fcf8e3;
+    text-decoration: none;
+}

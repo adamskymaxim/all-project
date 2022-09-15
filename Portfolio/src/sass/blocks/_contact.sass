@@ -1,0 +1,96 @@
+.contacts
+    margin-bottom: 90px
+    &__wrapper
+        padding-right: 35px
+        padding-left: 52px
+        display: grid
+        grid-template-columns: 400px 585px
+        column-gap: 70px
+        .line
+            margin: 0
+    &__img
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__title
+        position: relative
+        margin-left: 12px
+        margin-top: 7px
+        @include before_kolo
+    &__comfort
+        margin-top: 19px
+    &__icons
+        width: 135px
+        display: flex
+        justify-content: space-between
+        align-content: center
+        margin-top: 19px
+    &__form
+        margin-top: 30px
+        display: grid
+        grid-template-columns: repeat(2, 280px)
+        column-gap: 25px
+        grid-template-rows: 45px 183px 45px
+        row-gap: 28px
+    .textarea
+        grid-column: 1 / 3
+        textarea
+            width: 100%
+            height: 100%
+            resize: none
+            padding: 20px
+            box-sizing: border-box
+    &__triggers
+        display: flex
+        align-items: center
+        grid-column: 1 / 3
+        span
+            margin-left: 10px
+    &__btn
+        grid-row: 3
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+        cursor: pointer
+        margin-right: 35px
+    &__input
+        position: relative
+        label
+            position: absolute
+            background-color: #fff
+            min-width: 75px
+            height: 17.25px
+            left: 12px
+            top: -8px
+            text-align: center
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            padding: 0 11px 0 8px
+        input
+            box-sizing: border-box
+            width: 100%
+            height: 100%
+            font-size: 12px
+            font-weight: 500
+            padding: 0 20px
+    .textarea
+        position: relative
+        label
+            position: absolute
+            background-color: #fff
+            min-width: 75px
+            height: 17.25px
+            left: 12px
+            top: -8px
+            text-align: center
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            padding: 0 11px 0 8px
+        textarea
+            width: 100%
+    &__btn
+        padding: 11.5px 26px
+        min-width: 219px
+        background-color: $main-color
+        border: none

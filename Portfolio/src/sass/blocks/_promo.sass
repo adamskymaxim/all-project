@@ -1,0 +1,53 @@
+.promo
+    min-height: 100vh
+    position: relative
+    background: url('../img/bg/background.webp') no-repeat 50%/cover
+    padding-top: 205px
+    &__suptitle
+        padding-left: 9px
+        position: relative
+        z-index: 2
+        @include before_kolo
+        &::before
+            left: -1px
+        color:#fff
+        font-weight: 700
+    &__title
+        margin-top: 9px
+        color: #fff
+        font-weight: 700
+        width: 462px
+    &__link
+        display: flex
+        align-items: center
+        text-decoration: none
+        font-size: 14px
+        font-weight: 700
+        line-height: 21px
+        color: #FFFFFF
+        &:hover
+            content: ''
+            color: #fff
+    
+    .hamburger
+        height: 17px
+        position: absolute
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+        right: 30px
+        top: 20px
+        cursor: pointer
+        z-index: 9
+        .hamburger_long
+            width: 36px
+        span
+            display: block
+            height: 2.5px
+            width: 30px
+            background: #151812
+
+                
+
+    

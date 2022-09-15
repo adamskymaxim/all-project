@@ -1,0 +1,70 @@
+.aboutme
+    margin-top: 100px
+    margin-bottom: 115px
+    min-height: 575px
+    &__wrapper
+        display: grid
+        grid-template-columns: 400px 260px 260px
+        grid-template-rows: 28px 57px 156px 130px 173px
+        column-gap: 50px
+        row-gap: 15px
+    &__img
+        display: grid
+        gap-right: 70px
+        grid-column: 1
+        grid-row: 1 / 6
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__suptitle
+        position: relative
+        grid-column: 2
+        padding-left: 13px
+        padding-top: 7px
+        @include before_kolo
+        &::before
+            left: 0
+            top: 0px
+    &__name
+        font-weight: 700
+        font-size: 31px
+        line-height: 60px
+        grid-column: 2
+        grid-row: 2
+        span
+            border-bottom: 3px solid $main-color
+    &__lorem
+        font-weight: 500
+        grid-column: 2 / 4
+        grid-row: 3
+    .text
+        width: 200px
+        margin-left: 20px
+        &__title
+            margin-bottom: -14px
+            display: block
+    &__skills
+        position: relative
+        display: -webkit-inline-box
+        @include before_kolo_icon
+        &::before
+            left: -6px
+        img
+            margin-top: 18px
+            margin-left: 10px
+        &_1
+            grid-column: 2
+            grid-row: 4
+            -webkit-box-pack: unset
+            justify-content: space-between
+        &_2
+            grid-column: 3
+            grid-row: 4
+            justify-content: space-between
+            -webkit-box-pack: unset
+        &_3
+            grid-column: 2
+            grid-row: 5  
+            justify-content: space-between
+            -webkit-box-pack: unset

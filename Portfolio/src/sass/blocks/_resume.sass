@@ -1,0 +1,85 @@
+.resume
+    margin-bottom: 115px
+    h3
+        margin: 0
+    ul
+        padding: 0
+    .container
+        padding-left: 70px
+        padding-right: 70px
+    &__suptitle
+        position: relative
+        text-align: center
+        @include before_kolo
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &__title
+        text-align: center
+    .line
+        margin: 0 auto
+        margin-top: 25px
+    &__container
+        justify-content: center
+        padding-top: 60px
+        display: grid
+        grid-template-columns: repeat(2, 425px)
+        column-gap: 135px
+    &__column
+        &-title
+            padding-left: 43px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                border-radius: 100%
+                background: $main-color
+                width: 15px
+                height: 15px
+                left: -8px
+                top: 7px
+        ul
+            list-style-type: none
+            li
+                position: relative
+                &::after
+                    content: ''
+                    width: 1px
+                    height: 100%
+                    position: absolute
+                    left: -1px
+                    top: -8px
+                    background-color: #000
+                    z-index: -1
+    &__item
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            height: 1px
+            width: 44px
+            background-color: #000
+            z-index: -2
+            top: 50px
+        &-head
+            display: flex
+            flex-wrap: wrap
+            padding-left: 35px
+            padding-top: 35px
+            .div
+                padding-left: 19px
+        &-body
+            padding-left: 43px
+            padding-top: 11.5px
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+        &-icon
+            position: relative
+            display: flex
+            align-items: flex-end
+            padding-left: 18px
+            @include before_kolo
+            &::before
+                    top: -2px
+                    left: 4px
